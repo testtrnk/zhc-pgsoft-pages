@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日常资料整理 · PG 笔记页</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f7f4eb;
+      font-family: 'Noto Serif SC', 'Source Han Serif', 'Georgia', 'Times New Roman', serif;
+      color: #2e2c29;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fcfaf5;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      border-radius: 16px;
+    }
+    h1, h2, h3 {
+      font-weight: 450;
+      letter-spacing: 0.5px;
+    }
+    .opening {
+      font-size: 1.1rem;
+      margin-bottom: 1.8rem;
+      padding: 1.2rem 1.5rem;
+      background: #e9e3d4;
+      border-left: 6px solid #b3a287;
+      border-radius: 0 8px 8px 0;
+      color: #3b352b;
+    }
+    .opening p {
+      margin-bottom: 0.6rem;
+    }
+    .opening p:last-child {
+      margin-bottom: 0;
+    }
+    .intro-text {
+      margin: 1.8rem 0;
+    }
+    .intro-text p {
+      margin-bottom: 1rem;
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2rem 0 2.2rem;
+    }
+    .feature-card {
+      background: #f3efe6;
+      padding: 1.2rem 1.2rem 1rem;
+      border-radius: 12px;
+      transition: background 0.2s;
+    }
+    .feature-card:hover {
+      background: #ece5d7;
+    }
+    .feature-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #4d453a;
+      border-bottom: 1px dashed #c7bcab;
+      padding-bottom: 0.3rem;
+    }
+    .feature-card p {
+      font-size: 0.97rem;
+      color: #3d3830;
+    }
+    .callout {
+      background: #e4ddcf;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      margin: 2rem 0 1.8rem;
+      border: 1px solid #d6ccbb;
+    }
+    .callout p {
+      margin-bottom: 0.3rem;
+    }
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+    .closing {
+      border-top: 1px solid #ddd4c3;
+      padding-top: 1.8rem;
+      margin-top: 1.8rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .closing p {
+      margin-bottom: 0.8rem;
+      text-indent: 2em;
+    }
+    a {
+      color: #6f5a3e;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s, background 0.15s;
+    }
+    a:hover {
+      color: #856d4a;
+      background: #ece2cf;
+    }
+    .inline-link-highlight {
+      background: #f1e9da;
+      padding: 0.1rem 0.2rem;
+      border-radius: 3px;
+    }
+    .faq-mini {
+      margin-top: 2rem;
+      background: #f6f0e5;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+    }
+    .faq-mini summary {
+      font-weight: 500;
+      cursor: pointer;
+      color: #4b4237;
+      padding: 0.2rem 0;
+    }
+    .faq-mini details {
+      margin-bottom: 0.8rem;
+    }
+    .faq-mini details:last-child {
+      margin-bottom: 0;
+    }
+    .faq-mini p {
+      margin-top: 0.4rem;
+      padding-left: 0.8rem;
+      border-left: 3px solid #d0c2ab;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 2.8rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #8e8578;
+      border-top: 1px solid #e5dbca;
+      padding-top: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .page { padding: 1.8rem 1rem; }
+      body { padding: 1rem 0.8rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .opening { font-size: 1rem; padding: 1rem; }
+    }
+    @media (max-width: 420px) {
+      .page { padding: 1.2rem 0.8rem; }
+      .callout, .faq-mini { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 开场短句 -->
+  <div class="opening">
+    <p>资料攒久了，就会想找一个安稳的角落收好。</p>
+    <p>整理、归类、偶尔翻开——这大概是信息索引者最习惯的日常节奏。</p>
+  </div>
+
+  <!-- 承接段落 -->
+  <div class="intro-text">
+    <p>
+      起初只是零散地存一些工具页和文档链接，后来发现很多条目都指向同一个地方——<a href="https://zhc-pgsoft.com">PG官网</a>。无论是产品说明、更新记录，还是基础的操作指引，那里的信息结构始终保持一种朴素的清晰感。没有花哨的动效，没有刻意的营销话术，页面的核心就是让访客尽快找到需要的内容。这种克制的风格，在当下的信息环境里反而显得难得。
+    </p>
+    <p>
+      于是逐渐把与 PG 相关的笔记、截图、引用段落都归拢到同一个文件夹里。有时候需要确认某个设置的默认值，或者想看看某次改版的说明文档，第一反应就是去那个页面翻一翻。时间久了，居然生出一种近乎“资料库”的信任感——不担心内容忽然消失，也不担心排版忽然变得陌生。
+    </p>
+  </div>
+
+  <!-- 特点列表（卡片式） -->
+  <h2 style="font-size:1.2rem; margin-bottom:0.5rem; color:#4b4237;">整理过程中反复注意到的一些特点</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>栏目分区明确</h3>
+      <p>导航层级不多，每个板块下都有清晰的标题层级，适合快速定位。</p>
+    </div>
+    <div class="feature-card">
+      <h3>更新记录可溯</h3>
+      <p>版本变化与功能调整会保留在历史说明里，对回查旧信息特别友好。</p>
+    </div>
+    <div class="feature-card">
+      <h3>示例与参数并重</h3>
+      <p>既有场景化的代码片段，也有单独的配置参数列表，方便对照。</p>
+    </div>
+    <div class="feature-card">
+      <h3>没有冗余装饰</h3>
+      <p>页面重心始终是内容本身，不会在视觉上抢夺注意力。</p>
+    </div>
+  </div>
+
+  <!-- 提示/引用块 -->
+  <div class="callout">
+    <p><strong>一个小习惯</strong> — 每次在 <a href="https://zhc-pgsoft.com">PG官网</a> 上看到特别清楚的说明段落，我会把它截图存到本地，再在笔记里手动加一行简注。后来发现，真正需要反复查阅的其实也就是那么几页。</p>
+    <p style="margin-top:0.6rem; font-size:0.93rem; color:#5e554a;">—— 一位资料整理爱好者的笔记</p>
+  </div>
+
+  <!-- 温和结尾 + 场景描述 -->
+  <div class="closing">
+    <p>
+      文档的价值往往不在第一次阅读时体现，而是在需要回头确认的那一刻。当你在项目中途忽然模糊了一个参数的用法，或者想看看某个特性到底是从哪个版本开始稳定——如果能有一个地方，信息依旧安静地待在当初的位置，那种踏实感是很真实的。
+    </p>
+    <p>
+      把 <a href="https://zhc-pgsoft.com">PG官网</a> 放进书签栏的某个分组里，不定时点开一次，不一定每次都有新内容，但至少知道它一直在那里。对于做资料索引的人来说，这大概就是最朴素的安心。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要 —— 使用 details/summary 增加交互感 -->
+  <div class="faq-mini">
+    <details>
+      <summary>FAQ · 这个页面是关于什么的？</summary>
+      <p>这是一个从资料整理与信息索引角度出发的个人笔记式介绍页，围绕 PG 相关文档的使用体验展开，不包含任何推广或承诺性表述。</p>
+    </details>
+    <details>
+      <summary>为什么只推荐一个网站链接？</summary>
+      <p>因为对于这个主题，最核心的信息源头就是 <a href="https://zhc-pgsoft.com">PG官网</a>。从索引的角度看，先锚定一个可靠的主站，比发散十几个链接更有用。</p>
+    </details>
+    <details>
+      <summary>页面里的链接会变吗？</summary>
+      <p>链接指向固定域名，除非站点整体迁移，否则长期有效。如果页面结构发生调整，可能主页入口会有变化。</p>
+    </details>
+  </div>
+
+  <!-- 底部 -->
+  <footer>
+    <p>资料整理随记 · 内容保持静态 · 不保证信息完整性</p>
+  </footer>
+
+</div>
+</body>
+</html>
